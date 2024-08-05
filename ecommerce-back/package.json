@@ -1,0 +1,15 @@
+{
+  "name": "ecommerce-backend",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server db.json 5005"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.1"
+  }
+}
+
