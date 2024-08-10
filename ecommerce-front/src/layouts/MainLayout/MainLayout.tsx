@@ -1,15 +1,18 @@
-// import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+
 import { Container } from "react-bootstrap";
 import styles from './Styles.module.css'
-import Header from "../../components/common/Header/Header";
+import { Header, Footer } from "@components/common";
 const {container,wrapper}=styles
 const MainLayout = () => {
   return (
-    <Container className={container}>
+    <Container className={container} style={{width:"80%",margin:"0px auto"}}>
         <Header/>
         <div className={wrapper}>
-
+          <Outlet/>
         </div>
+        <Footer/>
+        
     </Container>
   )
 }
